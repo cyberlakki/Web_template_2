@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
-
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
@@ -8,14 +7,10 @@
 body{
     font-family: var(--sm-font);
     background-color: rgba(0, 0, 0, 0.05);
-
 }
-
-/* button */
 .bg-primary{
-    background-color: var(--pink)!important;
+    background-color: var(--pink);
 }
-
 .btn:not(.nav-btns button){
     background-color: #fff;
     color: rgb(85, 85, 85);
@@ -28,13 +23,9 @@ body{
     color: #fff;
     border-color: var(--pink);
 }
-
-/* text color */
 .text-primary{
-    color: var(--pink)!important;
+    color: var(--pink);
 }
-
-/* navbar */
 .navbar{
     -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -47,28 +38,29 @@ body{
     font-family: var(--lg-font);
 }
 .nav-link:hover{
-    color: var(--pink)!important;
+    color: var(--pink);
 }
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
 }
 
-/* header */
 #header{
-    background: url(../images/banner-img-1.jpg) top/cover no-repeat;
+    background: url(../images/banner-img-1.jpg);
+    background-position:calc(25%);
+    background-position-y:top;
+    background-size: cover;
+    background-repeat:-no-repeat;
 }
 .carousel-inner h1{
     font-size: 60px;
     font-family: var(--lg-font);
 }
 .carousel-item .btn{
-    border-color: #fff!important;
+    border-color: #fff;
 }
 .carousel-item .btn:hover{
-    border-color: var(--pink)!important;
+    border-color: var(--pink);
 }
-
-/* title */
 .title h2::before{
     position: absolute;
     content: "";
@@ -81,15 +73,13 @@ body{
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
 }
-
-/* collection */
 .active-filter-btn{
-    background-color: var(--pink)!important;
-    color: #fff!important;
-    border-color: var(--pink)!important;
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
 }
 .filter-button-group .btn:hover{
-    color: #fff!important;
+    color: #fff;
 }
 .collection-img span{
     top: 20px;
@@ -98,14 +88,12 @@ body{
     height: 46px;
     border-radius: 50%;
 }
-
-/* special */
 .special-img span{
     top: 20px;
     right: 20px;
 }
 .special-list .btn{
-    padding: 8px 20px!important;
+    padding: 8px 20px;
 }
 .special-img img{
     -webkit-transition: all 0.3s ease;
@@ -117,8 +105,6 @@ body{
         -ms-transform: scale(1.2);
             transform: scale(1.2);
 }
-
-/* offers */
 #offers{
     background: url(../images/offer_img.jpg) center/cover no-repeat;
 }
@@ -133,17 +119,11 @@ body{
     font-family: var(--lg-font);
 }
 .offers-content .btn{
-    border-color: transparent!important;
+    border-color: transparent;
 }
-
-about
 #about{
     background-color: rgba(0, 0, 0, 0.05);
 }
-
-
-/* footer */
-
 footer .brand{
     font-family: var(--lg-font);
     letter-spacing: 2px;
@@ -154,9 +134,8 @@ footer a{
     transition: color 0.3s ease;
 }
 footer a:hover{
-    color: var(--pink)!important;
+    color: var(--pink);
 }
-
 /* media queries */
 @media(min-width: 992px){
     .nav-item{
